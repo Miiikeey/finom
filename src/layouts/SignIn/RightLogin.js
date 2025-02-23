@@ -1,9 +1,13 @@
 import React from 'react';
-import { LoginForm, useLoginForm } from '../../components/forms/LoginForm';
+import { useNavigate } from 'react-router-dom';
+import { LoginForm } from '../../components/forms/LoginForm';
 
 const RightLogin = () => {
-  /* Handler */
-  const { handleCreateAccount } = useLoginForm();
+  const navigate = useNavigate();
+
+  const handleCreateAccount = () => {
+    navigate('/getstarted');
+  };
 
   return (
     <div className="left-[895px] top-[150px] absolute flex-col justify-center items-start gap-5 inline-flex">

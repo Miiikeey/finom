@@ -1,8 +1,8 @@
 import React from 'react';
-import { ReactComponent as EyeIcon } from '../../assets/images/eye.svg';
-import { ReactComponent as GoogleIcon } from '../../assets/images/googleicon.svg';
-import { ReactComponent as LinkedInIcon } from '../../assets/images/linkedinicon.svg';
-import { ReactComponent as CheckIcon } from '../../assets/images/check.svg';
+import { ReactComponent as EyeIcon } from '../../../assets/images/eye.svg';
+import { ReactComponent as GoogleIcon } from '../../../assets/images/googleicon.svg';
+import { ReactComponent as LinkedInIcon } from '../../../assets/images/linkedinicon.svg';
+import { ReactComponent as CheckIcon } from '../../../assets/images/check.svg';
 import { useState } from 'react';
 
 const SignUpForm = () => {
@@ -45,7 +45,7 @@ const SignUpForm = () => {
               value={firstName}
               onChange={handleFirstNameChange}
               placeholder="First Name"
-              className="w-full text-black text-xs font-normal font-['Inter'] leading-none outline-none"
+              className="w-full text-black text-xs font-normal font-['Helvetica Now Display'] leading-none outline-none"
             />
           </label>
         </div>
@@ -59,7 +59,7 @@ const SignUpForm = () => {
               value={lastName}
               onChange={handleLastNameChange}
               placeholder="Last Name"
-              className="w-full text-black text-xs font-normal font-['Inter'] leading-none outline-none"
+              className="w-full text-black text-xs font-normal font-['Helvetica Now Display'] leading-none outline-none"
             />
           </label>
         </div>
@@ -77,7 +77,7 @@ const SignUpForm = () => {
               value={password}
               onChange={handlePasswordChange}
               placeholder="Input Your Password"
-              className="w-[241px] text-black text-xs font-normal font-['Inter'] leading-none outline-none"
+              className="w-[241px] text-black text-xs font-normal font-['Helvetica Now Display'] leading-none outline-none"
             />
             <button 
               type="button"
@@ -98,7 +98,7 @@ const SignUpForm = () => {
               value={confirmPassword}
               onChange={handleConfirmPasswordChange}
               placeholder="Confirm Password"
-              className="w-[241px] text-black text-xs font-normal font-['Inter'] leading-none outline-none"
+              className="w-[241px] text-black text-xs font-normal font-['Helvetica Now Display'] leading-none outline-none"
             />
             <button 
               type="button"
@@ -122,7 +122,7 @@ const SignUpForm = () => {
               type="email"
               value={email}
               onChange={handleEmailChange}
-              className="w-full text-black text-xs font-normal font-['Inter'] leading-none outline-none"
+              className="w-full text-black text-xs font-normal font-['Helvetica Now Display'] leading-none outline-none"
             />
           </label>
         </div>
@@ -133,8 +133,9 @@ const SignUpForm = () => {
           <select
             value={school}
             onChange={handleSchoolChange}
-            className="w-[396px] h-[50px] px-5 py-4 bg-white rounded-[10px] border border-black text-black text-xs font-normal font-['Inter'] outline-none cursor-pointer"
+            className="w-[396px] h-[50px] px-5 py-4 bg-white rounded-[10px] border border-black text-black text-xs font-normal font-['Helvetica Now Display'] outline-none cursor-pointer"
           >
+            {/* School Options */}
             <option value="">Select</option>
             <option value="SAIT">Southern Alberta Institute of Technology</option>
             <option value="NAIT">Northern Alberta Institute of Technology</option>

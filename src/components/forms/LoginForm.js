@@ -3,7 +3,6 @@ import { ReactComponent as EyeIcon } from '../../assets/images/eye.svg';
 import { ReactComponent as GoogleIcon } from '../../assets/images/googleicon.svg';
 import { ReactComponent as LinkedInIcon } from '../../assets/images/linkedinicon.svg';
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 
 const LoginForm = () => {
   /* Variables and Handlers */  
@@ -17,8 +16,7 @@ const LoginForm = () => {
     handleSignIn,
     handleGoogleSignIn,
     handleLinkedInSignIn,
-    handleForgotPassword,
-    handleCreateAccount
+    handleForgotPassword
   } = useLoginForm();
 
   return (
@@ -34,7 +32,7 @@ const LoginForm = () => {
             value={email}
             onChange={handleEmailChange}
             placeholder="Johndoe@gmail.com"
-            className="w-[275px] text-[#262d33] text-xs font-normal font-['Inter'] leading-none outline-none"
+            className="w-[275px] text-[#262d33] text-xs font-normal font-['Helvetica Now Display'] leading-none outline-none"
           />
         </div>
       </div>
@@ -50,7 +48,7 @@ const LoginForm = () => {
             value={password}
             onChange={handlePasswordChange}
             placeholder="Input Your Password"
-            className="w-[241px] text-[#262d33] text-xs font-normal font-['Plus Jakarta Display'] leading-[18px] outline-none"
+            className="w-[241px] text-[#262d33] text-xs font-normal font-['Helvetica Now Display'] leading-[18px] outline-none"
           />
           <button 
             type="button"
@@ -119,7 +117,6 @@ const LoginForm = () => {
 
 /* State Management */
 const useLoginForm = () => {
-  const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
@@ -154,10 +151,6 @@ const useLoginForm = () => {
     console.log('Sign in with LinkedIn');
   };
 
-  const handleCreateAccount = () => {
-    navigate('/signup');
-  };
-
   return {
     email,
     password,
@@ -168,8 +161,7 @@ const useLoginForm = () => {
     handleSignIn,
     handleForgotPassword,
     handleGoogleSignIn,
-    handleLinkedInSignIn,
-    handleCreateAccount
+    handleLinkedInSignIn
   };
 };
 

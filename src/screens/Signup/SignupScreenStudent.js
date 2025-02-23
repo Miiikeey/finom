@@ -1,9 +1,9 @@
 import React from 'react';
 import { ReactComponent as LogoBlue } from '../../assets/images/LogoBlue.svg';
 import TopSignup from '../../layouts/SignUp/TopSignup';
-import { SignUpForm } from '../../components/forms/SignUpForm';
+import { SignUpForm } from '../../components/forms/Signup/SignUpFormStudent';
 
-function SignupScreen() {
+function SignupScreenStudent() {
   return (
     <div className="w-full overflow-x-hidden">
       <div className="w-[1440px] h-[1519px] relative mx-auto">
@@ -32,4 +32,4 @@ function SignupScreen() {
   );
 }
 
-export default SignupScreen;
+export default SignupScreenStudent;
