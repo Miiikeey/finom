@@ -7,6 +7,7 @@ import { useState } from 'react';
 
 const SignUpForm = () => {
   /* Variables and Handlers */  
+  /* Change for database connection */
   const {
     firstName,
     lastName,

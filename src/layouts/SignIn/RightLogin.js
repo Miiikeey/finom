@@ -4,6 +4,7 @@ import { LoginForm } from '../../components/forms/LoginForm';
 
 const RightLogin = () => {
   const navigate = useNavigate();
+  /* Change for database connection */
 
   const handleCreateAccount = () => {
     navigate('/getstarted');
